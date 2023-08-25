@@ -1,16 +1,16 @@
 import React, { useState } from "react";
-import axios from "axios";
+import axiosInstance1 from "../../config/axiosInstance1";
 import "./index.css";
 
-function Example02() {
+function Example03() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
 
   const registerHandler = (event) => {
     event.preventDefault();
 
-    axios
-      .post("https://jsonplaceholder.typicode.com/users", {
+    axiosInstance1
+      .post("/users", {
         name,
         email,
       })
@@ -44,4 +44,4 @@ function Example02() {
   );
 }
 
-export default Example02;
+export default Example03;
