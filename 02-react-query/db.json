@@ -1,0 +1,10 @@
+{
+  "courses": [
+    { "id": 1, "title": "Js Expres", "price": "Free" },
+    { "id": 2, "title": "React Expres", "price": 4200000 },
+    { "id": 3, "title": "Nodejs Expres", "price": 4500000 },
+    { "id": 4, "title": "React 20 Libs", "price": 600000 }
+  ],
+  "comments": [{ "id": 1, "body": "some comment", "postId": 1 }],
+  "profile": { "name": "typicode" }
+}
