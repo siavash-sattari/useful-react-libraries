@@ -4,22 +4,35 @@ import Count from "../components/Count";
 import { useQuery } from "react-query";
 
 function Courses() {
-  const { data } = useQuery("Courses", () =>
+  const { data, isLoading } = useQuery("Courses", () =>
     fetch("http://localhost:4000/courses").then((res) => res.json())
   );
 
   // const [data, setData] = useState([]);
+  // const [isLoading, setIsLoading] = useState(false);
 
-  // useEffect(() => {
-  //   const callApi = async () => {
+  // const callApi = async () => {
+  //   try {
+  //     setIsLoading(true);
   //     const res = await fetch("http://localhost:4000/courses");
   //     const responseData = await res.json();
-  //     console.log(responseData);
   //     setData(responseData);
-  //   };
+  //   } catch (error) {
+  //     error;
+  //   } finally {
+  //     setIsLoading(false);
+  //   }
+  // };
 
+  // useEffect(() => {
   //   callApi();
   // }, []);
+
+  if (isLoading) {
+    return (
+      <div className="alert alert-primary mt-4 text-center">is loading ...</div>
+    );
+  }
 
   return (
     <>
