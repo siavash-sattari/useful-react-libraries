@@ -1,7 +1,7 @@
-import React from "react";
+import Home from "../components/E01/Home";
 
-function Home() {
-  return <div>Home</div>;
+function HomePage() {
+  return <Home />;
 }
 
-export default Home;
+export default HomePage;
