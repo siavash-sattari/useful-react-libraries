@@ -1,5 +1,3 @@
-import React from "react";
-
 function Course({ title, price }) {
   return (
     <div className="col">

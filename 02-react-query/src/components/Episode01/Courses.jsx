@@ -1,7 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Course from "../components/Course";
-import Count from "../components/Count";
+import { useEffect, useState } from "react";
 import { useQuery } from "react-query";
+import Count from "./Count";
+import Course from "./Course";
 
 function Courses() {
   // const { data, isLoading } = useQuery("Courses", () =>
